@@ -1,0 +1,83 @@
+:is(h2){
+    color: hsla(0, 0%, 100%, 0.75) ;
+    text-align: center;
+}
+:is(img){
+    height:3cm ;
+    width: 3cm;
+}
+.box{
+
+    padding: 4cm;
+    border: 5px;
+    border-radius: 9px;
+ letter-spacing: 1px;
+ word-spacing: 5px;
+}
+.row{
+    border-radius:calc(9px-4px) ;
+}
+:is(p){
+    color:  hsl(0, 0%, 95%);
+    font-size:15px ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font: weight 400%; ;
+    text-align: center;
+}
+.row{
+    height: 12cm;
+}
+#sedans{
+    background-color:  hsl(31, 77%, 52%);
+}
+#suvs{
+    background-color:hsl(184, 100%, 22%) ;
+}
+#luxury{
+    background-color: hsl(179, 100%, 13%) ;
+}
+:is(button)
+{ position:absolute;
+    bottom:5px;
+    left: 28%;
+     border-radius: 10px;
+     color: hsl(0, 0%, 95%) ;
+     border-color: hsla(0, 0%, 100%, 0.75) ;
+     
+     background-color: cornsilk;
+     
+}
+  .button#sedansbtn{
+    background-color: hsl(31, 77%, 52%) ;
+   }
+   .button#suvsbtn{
+    background-color:hsl(184, 100%, 22%) ;
+   }
+   .button#luxurybtn{
+    background-color: hsl(179, 100%, 13%);
+   }
+:is(button:hover){
+    background-color: cornsilk;
+    cursor: pointer;
+}
+.box{
+    display: inline-block;
+}
+
+@media screen and (max-width: 1440px) {
+      .container{
+          width: 30pc;
+          display: flex;
+      }
+      
+   }
+ @media screen and (max-width: 375px) {
+       .container{
+           width: 95pc;
+           display:inline-flex;
+       }
+       button{
+           position: relative;
+       }
+      
+  }
